@@ -1,39 +1,29 @@
-# React Chrome Extension
-We have open sourced the boilerplate of chrome extension with ReactJs using inject page strategy. Read [detailed blog](https://medium.com/@satendra02/create-chrome-extension-with-reactjs-using-inject-page-strategy-137650de1f39)
+# Jira Standups Chrome extension
 
-
-The boilerplate is to quickly create a chrome extension using ReactJs, The motivation behind creating a boilerplate was:
-1. Instead of chrome's ready-made popup, We wanted our own page injected into DOM as a sidebar for better UX.
-
-2. We wanted to use ReactJs for the Component-based approach, Routing, and its build mechanism.
-
-3. We need to make sure that the extension CSS should not conflict with the host page styles in any case.
-
-
-## Features
-
-- Used ReactJs to write chrome extension
-- Injecting extension to host page as content script
-- Utilized the Chrome messaging API
-- Isolated extension CSS using Iframe
+Open source Atlas connect chrome extension. To install from source and add to chrome, follow the instructions below.
 
 ## Installation
->Make sure you have latest **NodeJs** version installed
+
+> Make sure you have latest **NodeJs** version installed
 
 Clone repo
 
 ```
 git clone https://github.com/satendra02/react-chrome-extension.git
 ```
+
 Go to `react-chrome-extension` directory run
 
 ```
 yarn install
 ```
+
 Now build the extension using
+
 ```
 yarn build
 ```
+
 You will see a `build` folder generated inside `[PROJECT_HOME]`
 
 To avoid running `yarn build` after updating any file, you can run
@@ -59,7 +49,6 @@ When you go to any website and click on extension icon, injected page will toggl
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/satendra02/react-chrome-extension/. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
 
 ## License
 
