@@ -1,0 +1,32 @@
+{{!< layout}}
+<header class="aui-page-header">
+  <div class="aui-page-header-inner">
+    <div class="aui-page-header-main intro-header">
+      <h1>{{title}}</h1>
+
+      <p class="subtitle">{{description}}</p>
+    </div>
+  </div>
+</header>
+
+<div class="aui-page-panel main-panel">
+  <div class="aui-page-panel-inner">
+    <section class="aui-page-panel-item">
+      <div class="aui-group">
+        <div class="aui-item">
+          <p class='bold-text'>
+            You've successfully connected to {{title}}. Get started in two steps:
+          </p>
+          <p>1. Install the chrome extension from <a href="#">here</a> (coming soon) or from source: <a target="_blank"
+              href="{{github}}">{{github}}</a></p>
+          <p>2. Copy the token here into the prompted section after opening the extension:</p>
+          <p class="code-section">
+            {{token}}
+          </p>
+          You're all set to use the extension!
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "app.css": "/static/css/app.css",
+  "app.js": "/static/js/app.js",
+  "app.css.map": "/static/css/app.css.map",
+  "app.js.map": "/static/js/app.js.map",
+  "content.css": "/static/css/content.css",
+  "content.js": "/static/js/content.js",
+  "content.css.map": "/static/css/content.css.map",
+  "content.js.map": "/static/js/content.js.map",
+  "static/media/logo.svg": "/static/media/logo.svg",
+  "index.html": "/index.html"
+}
