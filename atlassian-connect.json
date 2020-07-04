@@ -1,41 +1,43 @@
 {
-    "key": "jira-standups",
-    "name": "Jira Standups",
-    "description": "Run better standups with the Jira standups app",
-    "baseUrl": "{{localBaseUrl}}",
-    "authentication": {
-        "type": "jwt"
-    },
-    "lifecycle": {
-        "installed": "/installed"
-    },
-    "scopes": [
-        "READ"
-    ],
-    "modules": {
-        "generalPages": [
-            {
-                "key": "hello-world-page-jira",
-                "location": "system.top.navigation.bar",
-                "name": {
-                    "value": "Hello World"
-                },
-                "url": "/hello-world",
-                "conditions": [{
-                    "condition": "user_is_logged_in"
-                }]
-            },
-            {
-                "key": "hello-world-page-confluence",
-                "location": "system.header/left",
-                "name": {
-                    "value": "Hello World"
-                },
-                "url": "/hello-world",
-                "conditions": [{
-                    "condition": "user_is_logged_in"
-                }]
-            }
+  "key": "jira-standups",
+  "name": "Jira Standups",
+  "description": "Run better standups with the Jira standups app",
+  "baseUrl": "{{localBaseUrl}}",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "scopes": ["READ"],
+  "modules": {
+    "generalPages": [
+      {
+        "key": "jira-standups-page-jira",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Jira Standups"
+        },
+        "url": "/jira-standups",
+        "conditions": [
+          {
+            "condition": "user_is_logged_in"
+          }
         ]
-    }
+      },
+      {
+        "key": "jira-standups-page-confluence",
+        "location": "system.header/left",
+        "name": {
+          "value": "Jira Standups"
+        },
+        "url": "/jira-standups",
+        "conditions": [
+          {
+            "condition": "user_is_logged_in"
+          }
+        ]
+      }
+    ]
+  }
 }

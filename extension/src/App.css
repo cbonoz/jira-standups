@@ -22,7 +22,35 @@
   font-size: large;
 }
 
+.error-text {
+  color: red;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.credentials-button {
+  margin: 20px;
+}
+
+.jira-timer {
+  padding: 20px;
 }
