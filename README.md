@@ -15,6 +15,12 @@ The chrome extension that help you run more effective standups, right from Jira.
 - Jira Standups generate a random order of participants based on the issues and time each participant to fit into a scheduled time window of your choosing (for example, a 15 minute standup with 3 participants would give each member 5 minutes to talk about their status with the team.
 - Once complete, the extension will show the duration that the overall standup session took. Compare week to week to see how your standup efficiency improves.
 
+### Future work
+* More configurable options and week-to-week tracking for running the standup sessions.
+* Ability to open window showing the issues at hand without leaving the extension.
+* Paid options and premium content.
+
+
 ### Downloading the extension.
 
 Go to the `extension` folder and view the instructions there.
