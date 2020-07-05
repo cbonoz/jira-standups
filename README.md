@@ -1,4 +1,8 @@
-# Jira Standups
+<p align='center'>
+    <img src='./img/jira_standups_logo.png' width=350/>
+</p>
+
+## Jira Standups
 
 The chrome extension that help you run more effective standups, right from Jira.
 
@@ -16,10 +20,10 @@ The chrome extension that help you run more effective standups, right from Jira.
 - Once complete, the extension will show the duration that the overall standup session took. Compare week to week to see how your standup efficiency improves.
 
 ### Future work
-* More configurable options and week-to-week tracking for running the standup sessions.
-* Ability to open window showing the issues at hand without leaving the extension.
-* Paid options and premium content.
 
+- More configurable options and week-to-week tracking for running the standup sessions.
+- Ability to open window showing the issues at hand without leaving the extension.
+- Paid options and premium content.
 
 ### Downloading the extension.
 
