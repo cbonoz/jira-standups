@@ -4,6 +4,7 @@
 node_modules
 extension/node_modules
 extension/build
+extension/src/test.js
 build
 *.pem
 credentials.json

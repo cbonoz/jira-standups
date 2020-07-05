@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 export default function routes(app, addon) {
   // Redirect root path to /atlassian-connect.json,
   // which will be served by atlassian-connect-express.
@@ -8,6 +10,7 @@ export default function routes(app, addon) {
   app.get("/jira-standups", addon.authenticate(), (req, res) => {
     // Rendering a template is easy; the render method takes two params:
     // name of template and a json object to pass the context in.
+
     res.render("hello-world", {
       title: "Jira Standups",
       description:

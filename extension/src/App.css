@@ -3,8 +3,49 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /* animation: App-logo-spin infinite 20s linear; */
   height: 80px;
+}
+
+.times-up {
+  color: red;
+  font-size: 24px;
+}
+
+.left {
+  float: left;
+}
+
+.jira-timer {
+  font-size: 20px;
+}
+
+.home-button {
+  margin-top: 20px;
+}
+
+.App-intro input {
+  margin: 12px;
+  width: 300px;
+}
+
+.slogan-text {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.jira-issue {
+  margin: 20px;
+  padding: 10px;
+  display: inline-block;
+  border: 1px dashed black;
+  margin-bottom: 10px;
+  max-width: 400px;
 }
 
 .App-header {
@@ -38,14 +79,14 @@
   color: orange;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .credentials-button {
   margin: 20px;
