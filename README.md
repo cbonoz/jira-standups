@@ -16,7 +16,7 @@ The chrome extension that helps you run more effective standup meetings, right f
 
 - Chrome extension connects with a user's Jira account and pulls the active Boards and Projects from their account.
 - User can select a board to run a standup from. Jira Standups will pull and categorize the issues from the board, as well as identify the engineers/users currently working on issues.
-- Jira Standups generate a random order of participants based on the issues and time each participant to fit into a scheduled time window of your choosing (for example, a 15 minute standup with 3 participants would give each member 5 minutes to talk about their status with the team.
+- Jira Standups generates a random order of participants based on the issues and time each participant to fit into a scheduled time window of your choosing (for example, a 15 minute standup with 3 participants would give each member 5 minutes to talk about their status with the team).
 - Once complete, the extension will show the duration that the overall standup session took. Compare week to week to see how your standup efficiency improves.
 
 ### Future work
