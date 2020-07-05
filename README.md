@@ -4,7 +4,7 @@
 
 ## Jira Standups
 
-The chrome extension that help you run more effective standups, right from Jira.
+The chrome extension that helps you run more effective standup meetings, right from Jira.
 
 ### Inspiration
 
