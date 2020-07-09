@@ -8,7 +8,9 @@ The chrome extension that helps you run more effective standup meetings, right f
 
 ### Inspiration
 
-- Running effective standups can be something many struggle with day to day.
+Almost every modern engineering org and team runs some form of a standup meeting, whether daily or otherwise, and these can be especially important in a remote-oriented work environment.
+
+- However, Running effective standups can be something many struggle with.
 - Standups can be difficult to manage consistently and stick to fixed time schedule.
 - Often times one person will go way short and might not be adequately explaining their day to day, and other folks might go way over.
 - With Jira Standups, the app will help you better time manage your daily standup session and ensure that each participant both voices their status and works within the specified time constraint of your choosing.
@@ -37,11 +39,4 @@ Go to the `extension` folder and view the instructions there.
 
 https://developer.atlassian.com/cloud/jira/software/rest/
 
-# Atlassian Connect App using Express
-
-Congratulations!
-You've successfully created an Atlassian Connect App using the Express web application framework.
-
-## What's next?
-
-[Read the docs](https://bitbucket.org/atlassian/atlassian-connect-express/src/master/README.md).
+Atlassian Connect App using Express
