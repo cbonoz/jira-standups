@@ -35,8 +35,8 @@ function Issue({ issue, domain }) {
       {!domain && <b>{summary}</b>}
       {description && <p>{description}</p>}
       <br />
-      {status.name.toUpperCase()}, {formatDate(created)} (
-      <span className={colorClass}>{getDaysOld(created)} days old</span>)
+      {status.name.toUpperCase()}, {formatDate(created)}
+      <br />(<span className={colorClass}>{getDaysOld(created)} days old</span>)
     </div>
   );
 }

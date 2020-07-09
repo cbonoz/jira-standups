@@ -8,9 +8,10 @@ import TimeText from "./TimeText";
 
 function Rotation({ board, setBoard, domain }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [issues, setIssues] = useState(groupIssues(sampleIssues()));
+  const [issues, setIssues] = useState({});
   const [users, setUsers] = useState(sortRandom(Object.keys(issues)) || []);
   const [duration, setDuration] = useState(15); // 15 minutes (adjustable)
+  const [error, setError] = useState("");
   const [timesUp, setTimesUp] = useState(false);
   const [loading, setLoading] = useState(false);
   const [ended, setEnded] = useState(false);
@@ -18,6 +19,7 @@ function Rotation({ board, setBoard, domain }) {
 
   async function getIssues() {
     setLoading(true);
+    setError("");
     try {
       const data = await getJira().board.getIssuesForBoard({
         boardId: board.id,
@@ -26,8 +28,10 @@ function Rotation({ board, setBoard, domain }) {
       setIssues(newIssues);
       setUsers(Object.keys(newIssues));
     } catch (e) {
-      // alert("Error getting issues for board", e.toString());
+      // alert();
+      const err = "Error getting issues for board: " + e.toString();
       console.error(e);
+      setError(err);
     }
     setLoading(false);
   }
@@ -143,6 +147,8 @@ function Rotation({ board, setBoard, domain }) {
             </Button>
           </div>
         )}
+
+        {error && <p className="error-text">{error}</p>}
       </div>
     </div>
   );
