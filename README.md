@@ -8,9 +8,13 @@ The chrome extension that helps you run more effective standup meetings, right f
 
 ### Inspiration
 
+- Running effective standups can be something many struggle with day to day.
 - Standups can be difficult to manage consistently and stick to fixed time schedule.
+- Often times one person will go way short and might not be adequately explaining their day to day, and other folks might go way over.
 - With Jira Standups, the app will help you better time manage your daily standup session and ensure that each participant both voices their status and works within the specified time constraint of your choosing.
 - If you're running a regularly-scheduled sprint, it can be easy for tickets to simply roll over from week to week, this app will help identify tickets that have been lingering on the board too long - and show issues in 'red' that have been stagnant on the board under a given individuals name for multiple weeks.
+- Whole process is timed, so day to day you can see how long the average stand up takes and if there are opportunities to trim or improve.
+- Open source
 
 ### How it works
 
