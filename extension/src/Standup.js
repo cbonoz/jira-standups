@@ -6,34 +6,31 @@ import { getJira } from "./helper";
 
 function Standup({ credentials }) {
   const { domain, token } = credentials;
-  const [boards, setBoards] = useState([
-    {
-      id: 1,
-      self: "https://chrisdevelop.atlassian.net/rest/agile/1.0/board/1",
-      name: "GROW board",
-      type: "scrum",
-      location: [Object],
-    },
-  ]);
+  const [boards, setBoards] = useState([]);
   const [selectedBoard, setSelectedBoard] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  async function getBoards() {
-    setLoading(true);
-    try {
-      const data = await getJira().board.getAllBoards();
-      const userBoards = data.values;
-      console.log("boards", userBoards);
-      setBoards(userBoards);
-    } catch (e) {
-      // setError(e.toString());
-      console.error(e);
-    }
-    setLoading(false);
-  }
-
   useEffect(() => {
+    async function getBoards() {
+      setError("");
+      setLoading(true);
+      try {
+        const data = await getJira().board.getAllBoards();
+        if (!data) {
+          setError(`Please use extension while on your Jira page: ${domain}`);
+          return;
+        }
+        const userBoards = data.values;
+        console.log("boards", data);
+        setBoards(userBoards);
+      } catch (e) {
+        // setError(e.toString());
+        console.error(e);
+        setError("Error loading boards, please try again later");
+      }
+      setLoading(false);
+    }
     getBoards();
   }, []);
 
@@ -41,8 +38,10 @@ function Standup({ credentials }) {
     <div>
       {!selectedBoard && (
         <div>
-          <h3>Select Board:</h3>
+          <p>Ready for Standup?</p>
+          <h3>Select board:</h3>
           <br />
+          {loading && <p>...</p>}
           {boards &&
             boards.map((b, i) => {
               return (
@@ -58,11 +57,16 @@ function Standup({ credentials }) {
                 </div>
               );
             })}
+          {error && <p className="error-text">{error}</p>}
         </div>
       )}
 
       {selectedBoard && (
-        <Rotation board={selectedBoard} setBoard={setSelectedBoard} />
+        <Rotation
+          board={selectedBoard}
+          setBoard={setSelectedBoard}
+          domain={domain}
+        />
       )}
 
       {error && <p className="error-text">{error}</p>}

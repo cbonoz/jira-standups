@@ -6,7 +6,7 @@ import { groupIssues, sampleIssues, sortRandom, getJira } from "./helper";
 import Issue from "./Issue";
 import TimeText from "./TimeText";
 
-function Rotation({ board, setBoard }) {
+function Rotation({ board, setBoard, domain }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [issues, setIssues] = useState(groupIssues(sampleIssues()));
   const [users, setUsers] = useState(sortRandom(Object.keys(issues)) || []);
@@ -84,7 +84,7 @@ function Rotation({ board, setBoard }) {
           {currentIssues.map((iss, i) => {
             return (
               <div key={i}>
-                <Issue issue={iss} />
+                <Issue issue={iss} domain={domain} />
               </div>
             );
           })}
@@ -116,8 +116,8 @@ function Rotation({ board, setBoard }) {
         {!started && users && (
           <div>
             <p>
-              About to a start a Standup for {board.name}.<br />
-              The following individuals will be called:
+              About to a start a standup for <b>{board.name}</b>.<br />
+              The following individuals will be included:
             </p>
             {users.map((u, i) => {
               return (

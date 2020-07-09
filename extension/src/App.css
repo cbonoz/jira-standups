@@ -20,13 +20,24 @@
   font-size: 20px;
 }
 
+.div-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.div-link:hover {
+  text-decoration: underline;
+}
+
 .home-button {
   margin-top: 20px;
 }
 
 .App-intro input {
   margin: 12px;
-  width: 300px;
+  max-width: 300px;
+  padding: 4px;
+  border: 1px solid black;
 }
 
 .slogan-text {

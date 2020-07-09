@@ -61,7 +61,15 @@ export const getDaysOld = (oldDate) => {
   var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
   return parseInt(Difference_In_Days);
 };
-
+export const sampleBoards = () => [
+  {
+    id: 1,
+    self: "https://chrisdevelop.atlassian.net/rest/agile/1.0/board/1",
+    name: "GROW board",
+    type: "scrum",
+    location: [Object],
+  },
+];
 export const sampleIssues = () => {
   return [
     {
